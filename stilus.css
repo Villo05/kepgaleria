@@ -1,0 +1,27 @@
+img{
+    width: 100%;
+}
+
+.kartya{
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+.kartya button{
+    background-color: beige;
+}
+
+.tarolo{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tetszik{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid purple;
+    display: flex;
+    flex-wrap: wrap;
+}
