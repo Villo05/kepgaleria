@@ -9,7 +9,7 @@ const nagyKepSzElem = document.querySelector(".nagyKep")
 new Kepek(KEPLISTA, szuloElem);
 
 let index = 0;
-const nagyKep = new NagyKep(KEPLISTA[0], 0, nagyKepSzElem, true)
+const nagyKep = new NagyKep(KEPLISTA[index], 0, nagyKepSzElem, true)
 window.addEventListener("kivalaszt", (event)=>{
     index = event.detail;
     nagyKepSzElem.innerHTML = "";

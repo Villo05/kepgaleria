@@ -16,9 +16,10 @@ export default class NagyKep{
         let kod  =`
             <div class="kartya">
                 <img src="${this.#obj.foto}" alt="${this.#obj.nev} ">
-                <p>${this.#obj.nev}</p>
+                
             </div>
             `
+        kod += `<p>${this.#obj.nev}</p>`
         this.szuloElem.insertAdjacentHTML("beforeend", kod);
     }
 
