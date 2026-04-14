@@ -1,15 +1,18 @@
 import { KEPLISTA } from "./adat.js";
+import Kep from "./Kep.js";
 import Kepek from "./Kepek.js";
+import NagyKep from "./NagyKep.js";
 
 const szuloElem = document.querySelector(".tarolo");
-const tetszikElem = document.querySelector(".tetszik");
-
+const nagyKepSzElem = document.querySelector(".nagyKep")
 
 new Kepek(KEPLISTA, szuloElem);
 
-const TETSZIKLISTA = [];
-window.addEventListener("tetszik", function(event){
-    console.log(event.detail);
-    TETSZIKLISTA.push(KEPLISTA[event.detail]);
-    new Kepek(TETSZIKLISTA, tetszikElem)
+let index = 0;
+const nagyKep = new NagyKep(KEPLISTA[0], 0, nagyKepSzElem, true)
+window.addEventListener("kivalaszt", (event)=>{
+    index = event.detail;
+    nagyKepSzElem.innerHTML = "";
+    const foKep = new Kep(KEPLISTA[index], index, nagyKepSzElem);
 })
+

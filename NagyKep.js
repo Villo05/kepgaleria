@@ -1,6 +1,6 @@
 
 
-export default class Kep{
+export default class NagyKep{
     #obj = {}
     #index = 0;
     constructor(obj={foto: "",nev: ""},index,szuloElem){
@@ -8,29 +8,19 @@ export default class Kep{
         this.szuloElem = szuloElem;
         this.#index = index;
         this.megjelenit();
-        this.esemenyKezelo();
     }
 
-    esemenyKezelo(){
-        this.kepElem = document.querySelector(".kartya:last-child");
-        console.log(this.kepElem);
-        this.kepElem.addEventListener("click", (event) => {
-            this.sajatEsemeny();
-        })
-    }
+ 
 
     megjelenit(){
         let kod  =`
             <div class="kartya">
                 <img src="${this.#obj.foto}" alt="${this.#obj.nev} ">
+                <p>${this.#obj.nev}</p>
             </div>
             `
-        
         this.szuloElem.insertAdjacentHTML("beforeend", kod);
     }
 
-    sajatEsemeny(){
-        const e = new CustomEvent("kivalaszt", {detail:this.#index});
-        window.dispatchEvent(e);
-    }
+
 }

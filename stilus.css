@@ -18,10 +18,6 @@ img{
     flex-wrap: wrap;
 }
 
-.tetszik{
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid purple;
-    display: flex;
-    flex-wrap: wrap;
+.nagyKep img{
+    width: 150%;
 }
