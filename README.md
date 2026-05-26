@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Képgaléria Projekt
 
 Egy egyszerű, reszponzív és moduláris képgaléria alkalmazás, amely komponensalapú megközelítéssel (JavaScript / React-szerű logika vanilla környezetben) jeleníti meg a képeket, kártyákat és a nagyított nézetet.
@@ -19,3 +20,6 @@ Egy egyszerű, reszponzív és moduláris képgaléria alkalmazás, amely kompon
 * `kartya.js` – A galéria egyes elemeit formázó kártya komponens.
 * `NagyKep.js` – A kiemelt, nagy méretű kép megjelenítését vezérlő modul.
 * `kepek/` – A galériában megjelenő képfájlok mappája.
+=======
+
+>>>>>>> 7c51a07f12c6e983411e27d5d6f6f00fee34b4e6
