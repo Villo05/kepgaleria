@@ -1,3 +1,7 @@
+/**
+ * A galériában megjelenítendő tetoválás képek adatlistája.
+ * @type {Array<{foto: string, nev: string}>}
+ */
 export const KEPLISTA=[
     {
     foto:"kepek/pillango.jpg",
